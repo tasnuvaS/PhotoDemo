@@ -30,6 +30,25 @@ toString() {
 
 }
 
-let photo1 = new photo1( 8, 10);
-console.log
-let photo2 = new photo2( 8, 10);
+let photo1 = new Photo(8, 10);
+console.log(photo1.toString());
+
+let photo2 = new Photo(20, 30);
+console.log(photo2.toString());
+
+class MattedPhoto extends Photo{
+    constructor (color)
+    {
+        super(height, weidth);
+        this.color = color;
+      }
+}
+
+class FramedPhoto extends Photo{
+    constructor (material, style)
+    {
+        super(height, weidth);
+        this.material = material;
+        this.style = style;
+      }
+}
